@@ -1,0 +1,17 @@
+import subprocess #para acesso ao SO
+import webbrowser #para acesso aos navegadores
+
+# Abre o Teams
+subprocess.call(r"C:\Users\<user>\AppData\Local\Microsoft\Teams\current\Teams.exe")
+#subprocess.Popen()
+
+
+# Abre o Outlook no navegador padrão
+webbrowser.open("https://outlook.office365.com/mail/")
+
+
+# Registra outro browser
+webbrowser.register('chrome', None, webbrowser.BackgroundBrowser('C:\Program Files\Google\Chrome\Application\chrome.exe'))
+
+# Abre o Tems pelo Chrome
+webbrowser.get('chrome').open("https://teams.microsoft.com/")
