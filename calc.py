@@ -36,5 +36,6 @@ def calculator():
             dic["value1"] = res
             dic["operator"] = ope
             
-if _name_ == "_main_":
+if __name__ == "__main__":
+    print("************** CALCULATOR *****************")
     calculator()
